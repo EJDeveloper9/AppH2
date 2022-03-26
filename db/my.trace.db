@@ -1,0 +1,14 @@
+03-26 18:47:50 jdbc[2]: SQLException
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement SELECT  * REGISTRATION[*] ; SQL statement:
+select  * REGISTRATION [42000-73]
+	at org.h2.message.Message.getSQLException(Message.java:103)
+	at org.h2.message.Message.getSQLException(Message.java:114)
+	at org.h2.message.Message.getSQLException(Message.java:77)
+	at org.h2.message.Message.getSyntaxError(Message.java:126)
+	at org.h2.command.Parser.getSyntaxError(Parser.java:467)
+	at org.h2.command.Parser.prepareCommand(Parser.java:248)
+	at org.h2.engine.Session.prepareLocal(Session.java:284)
+	at org.h2.engine.Session.prepareCommand(Session.java:245)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1015)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:70)
+	at apph2.ShowTabela.main(ShowTabela.java:26)
